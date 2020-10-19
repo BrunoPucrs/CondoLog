@@ -2,19 +2,19 @@ package CondoLog;
 
 import java.util.ArrayList;
 
-public class OperaçãoDeEntregas {
+public class OperacaoDeEntregas {
     private ArrayList<Entrega> entregas;
 
     public void registrarEntregas() {
-        //formato: descrição, dia, mes, ano, hora, minuto, apartamento
-        entregas.add(new Entrega("Caixa grande branca", 12, 10, 2020, 18, 33, 405));
-        entregas.add(new Entrega("Caixa pequena azul", 13, 10, 2020, 19, 41, 406));
-        entregas.add(new Entrega("Envelope pardo", 13, 10, 2020, 19, 56, 302));
-        entregas.add(new Entrega("Carta internacional", 19, 11, 2020, 13, 44, 306));
-        entregas.add(new Entrega("Envelope pardo", 21, 11, 2020, 16, 39, 606));
+        //formato: descrição, dia, mes, ano, hora, minuto, apartamento, operador
+        entregas.add(new Entrega(1,"Caixa grande branca", 12, 10, 2020, 18, 33, 405, "BG"));
+        entregas.add(new Entrega(2,"Caixa pequena azul", 13, 10, 2020, 19, 41, 406, "GP"));
+        entregas.add(new Entrega(3,"Envelope pardo", 13, 10, 2020, 19, 56, 302, "BR"));
+        entregas.add(new Entrega(4,"Carta internacional", 19, 11, 2020, 13, 44, 306, "BG"));
+        entregas.add(new Entrega(5,"Envelope pardo", 21, 11, 2020, 16, 39, 606, "BG"));
     }
 
-    public OperaçãoDeEntregas() {
+    public OperacaoDeEntregas() {
         entregas = new ArrayList<>();
         registrarEntregas();
     }
@@ -57,5 +57,13 @@ public class OperaçãoDeEntregas {
             }
             if(entregasEncontradas == 0) System.out.println("Não foram encontradas entregas entre as datas especificadas!");
         }
+    }
+
+    public ArrayList<Entrega> getEntregas() {
+        return entregas;
+    }
+
+    public void setEntregas(ArrayList<Entrega> entregas) {
+        this.entregas = entregas;
     }
 }

@@ -6,11 +6,11 @@ public class CadastroDeMoradores {
     private ArrayList<Morador> moradores;
 
     public void carregarMoradores() {
-        moradores.add(new Morador("João", "000.000.00-00", 302));
-        moradores.add(new Morador("Joaquim", "000.000.00-01", 306));
-        moradores.add(new Morador("Maria", "000.000.00-02", 606));
-        moradores.add(new Morador("José", "000.000.00-03", 406));
-        moradores.add(new Morador("Mariana", "000.000.00-04", 701));
+        moradores.add(new Morador("João Silva", "000.000.00-00", 302));
+        moradores.add(new Morador("Joaquim Duarte", "000.000.00-01", 306));
+        moradores.add(new Morador("Maria Cruz", "000.000.00-02", 606));
+        moradores.add(new Morador("José Garcia", "000.000.00-03", 406));
+        moradores.add(new Morador("Mariana Bosch", "000.000.00-04", 701));
     }
 
     public CadastroDeMoradores(){
@@ -31,4 +31,13 @@ public class CadastroDeMoradores {
             morador.mostrarMorador();
         }
     }
+
+    public ArrayList<Morador> getMoradores() {
+        return moradores;
+    }
+
+    public void setMoradores(ArrayList<Morador> moradores) {
+        this.moradores = moradores;
+    }
+    
 }

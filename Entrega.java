@@ -1,6 +1,8 @@
 package CondoLog;
 
 public class Entrega {
+    private String operador;
+    private int nro;
     private String descricao;
     private int dia;
     private int mes;
@@ -9,7 +11,8 @@ public class Entrega {
     private int minuto;
     private int apDestino;
 
-    Entrega(String descricao, int dia, int mes, int ano, int hora, int minuto, int apDestino) {
+    Entrega(int nro, String descricao, int dia, int mes, int ano, int hora, int minuto, int apDestino, String operador) {
+        this.nro = nro;
         this.descricao = descricao;
         this.dia = dia;
         this.mes = mes;
@@ -17,6 +20,15 @@ public class Entrega {
         this.hora = hora;
         this.minuto = minuto;
         this.apDestino = apDestino;
+        this.operador = operador;
+    }
+
+    public String getOperador() {
+        return operador;
+    }
+
+    public void setOperador(String operador) {
+        this.operador = operador;
     }
 
     public String getDescricao() {
@@ -45,6 +57,14 @@ public class Entrega {
 
     public int getApDestino() {
         return apDestino;
+    }
+
+    public int getNro() {
+        return nro;
+    }
+
+    public void setNro(int nro) {
+        this.nro = nro;
     }
 
     public void mostrarEntrega() {
