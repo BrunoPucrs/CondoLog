@@ -1,5 +1,3 @@
-# CondoLog
-Bruno R
-Henrique T
-Guilherme P
-Bruno G
+#CondoLog
+##Gerenciamento de Entregas
+(https://github.com/BrunoPucrs/CondoLog/blob/main/img/Condolog.jpg)
